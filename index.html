@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Car Rental App</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Car Rental App 🚗</h1>
+    </div>
+
+    <div class="car-list">
+        <div class="car">
+            <img src="Images/Car-1.jpg" alt="Car 1">
+            <h3>Car Model 1</h3>
+            <p>Price per day: $50</p>
+            <button onclick="showRentForm(1)">Rent Now</button>
+        </div>
+
+        <div class="car">
+            <img src="Images/Car-2.jpg" alt="Car 2">
+            <h3>Car Model 2</h3>
+            <p>Price per day: $60</p>
+            <button onclick="showRentForm(2)">Rent Now</button>
+        </div>
+
+        <div class="car">
+            <img src="Images/Car-3.jpg" alt="Car 3">
+            <h3>Car Model 3</h3>
+            <p>Price per day: $90</p>
+            <button onclick="showRentForm(2)">Rent Now</button>
+        </div>
+        <div class="car">
+            <img src="Images/Car-4.jpg" alt="Car 4">
+            <h3>Car Model 4</h3>
+            <p>Price per day: $100</p>
+            <button onclick="showRentForm(2)">Rent Now</button>
+        </div>
+        <div class="car">
+            <img src="Images/Car-5.jpg" alt="Car 5">
+            <h3>Car Model 5</h3>
+            <p>Price per day: $110</p>
+            <button onclick="showRentForm(2)">Rent Now</button>
+        </div>
+        <div class="car">
+            <img src="Images/Car-6.jpg" alt="Car 6">
+            <h3>Car Model 6</h3>
+            <p>Price per day: $120</p>
+            <button onclick="showRentForm(2)">Rent Now</button>
+        </div>
+
+        <!-- Add more cars as needed -->
+    </div>
+
+    <div class="rent-form" id="rentForm">
+        <h2>Rent Car</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Car Rental App</p>
+    </div>
+</body>
+</html>

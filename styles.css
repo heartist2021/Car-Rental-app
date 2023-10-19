@@ -1,0 +1,146 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: white;
+    background: url('Images/Back-1.jpg') center center/cover no-repeat; /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to the container */
+}
+
+/* Ensure the background image fits within the screen window */
+body::after {
+    content: "";
+    background: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity if needed */
+}
+
+
+/* Header and Footer styles */
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Car styles */
+.car {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+.car img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.car p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Rent Form styles */
+.rent-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 80%;
+    max-width: 400px;
+}
+
+.rent-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rent-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rent-form label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.rent-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.rent-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rent-form button:hover {
+    background-color: #45a049;
+}
+
+.rent-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #777;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car {
+        width: 80%;
+    }
+
+    .rent-form {
+        width: 90%;
+    }
+}
